@@ -10216,3 +10216,36 @@ body.tg_boxed
 .size-large {
 	width: 100% !important;
 }
+
+.action-button {
+	display: inline-block;
+	width: 55px;
+	height: 55px;
+	text-align: center;
+	position: fixed; /* Fixed/sticky position */
+	right: 36px; /* Place the button 30px from the right */
+	z-index: 99; /* Make sure it does not overlap */
+	border: none; /* Remove borders */
+	background-color: #bcbcbc; /* Set a background color */
+	color: white; /* Text color */
+	cursor: pointer; /* Add a mouse pointer on hover */
+	border-radius: 50%;
+}
+
+#messenger-button {
+	bottom: 111px; /* Place the button at the bottom of the page */
+}
+
+#phone-button {
+	bottom: 181px; /* Place the button at the bottom of the page */
+}
+
+#zalo-button {
+	bottom: 251px;
+}
+
+.action-button i {
+	color: #ffffff;
+    font-size: 25px;
+    line-height: 52px;
+}
