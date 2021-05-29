@@ -7433,7 +7433,7 @@ body.single-attachment p.attachment
 
 .car_attribute_price_day.two_cols .single_car_price
 {
-	font-size: 39px;
+	font-size: 29px;
 }
 
 .car_attribute_price_day.three_cols .single_car_price
@@ -10233,15 +10233,15 @@ body.tg_boxed
 }
 
 #messenger-button {
-	bottom: 60px; /* Place the button at the bottom of the page */
+	bottom: 20px; /* Place the button at the bottom of the page */
 }
 
 #phone-button {
-	bottom: 130px; /* Place the button at the bottom of the page */
+	bottom: 90px; /* Place the button at the bottom of the page */
 }
 
 #zalo-button {
-	bottom: 200px;
+	bottom: 160px;
 }
 
 .action-button i {
