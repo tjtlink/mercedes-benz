@@ -196,7 +196,6 @@
                                     </div>
                                 </div>                                
                             </div>
-                            <br class="clear" />
                             <!-- <div class="pagination"><span class="current">1</span><a href='#' class="inactive">2</a></div>
                             <div class="pagination_detail">
                                 Page 1 of 2 </div> -->
@@ -269,97 +268,56 @@
     <script type='text/javascript' src='js/jquery.js'></script>
     <script type='text/javascript' src='js/jquery-migrate.min.js'></script>
     <script type='text/javascript' src='js/plugins/grandcarrental-custom-post/js/jquery.barrating.js'></script>
-    <script type='text/javascript' src='js/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js'></script>
-    <script type='text/javascript' src='js/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js'></script>
-    <script type="text/javascript">
-        function setREVStartSize(e) {
-            try {
-                var i = jQuery(window).width(),
-                    t = 9999,
-                    r = 0,
-                    n = 0,
-                    l = 0,
-                    f = 0,
-                    s = 0,
-                    h = 0;
-                if (e.responsiveLevels && (jQuery.each(e.responsiveLevels, function(e, f) {
-                        f > i && (t = r = f, l = e), i > f && f > r && (r = f, n = e)
-                    }), t > r && (l = n)), f = e.gridheight[l] || e.gridheight[0] || e.gridheight, s = e.gridwidth[l] || e.gridwidth[0] || e.gridwidth, h = i / s, h = h > 1 ? 1 : h, f = Math.round(h * f), "fullscreen" == e.sliderLayout) {
-                    var u = (e.c.width(), jQuery(window).height());
-                    if (void 0 != e.fullScreenOffsetContainer) {
-                        var c = e.fullScreenOffsetContainer.split(",");
-                        if (c) jQuery.each(c, function(e, i) {
-                            u = jQuery(i).length > 0 ? u - jQuery(i).outerHeight(!0) : u
-                        }), e.fullScreenOffset.split("%").length > 1 && void 0 != e.fullScreenOffset && e.fullScreenOffset.length > 0 ? u -= jQuery(window).height() * parseInt(e.fullScreenOffset, 0) / 100 : void 0 != e.fullScreenOffset && e.fullScreenOffset.length > 0 && (u -= parseInt(e.fullScreenOffset, 0))
-                    }
-                    f = u
-                } else void 0 != e.minHeight && f < e.minHeight && (f = e.minHeight);
-                e.c.closest(".rev_slider_wrapper").css({
-                    height: f
-                })
-            } catch (d) {
-                console.log("Failure at Presize of Slider:" + d)
-            }
-        };
-    </script>
-    <script>
-        (function() {
-            function addEventListener(element, event, handler) {
-                if (element.addEventListener) {
-                    element.addEventListener(event, handler, false);
-                } else if (element.attachEvent) {
-                    element.attachEvent('on' + event, handler);
-                }
-            }
-
-            function maybePrefixUrlField() {
-                if (this.value.trim() !== '' && this.value.indexOf('http') !== 0) {
-                    this.value = "http://" + this.value;
-                }
-            }
-
-            var urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]');
-            if (urlFields && urlFields.length > 0) {
-                for (var j = 0; j < urlFields.length; j++) {
-                    addEventListener(urlFields[j], 'blur', maybePrefixUrlField);
-                }
-            } /* test if browser supports date fields */
-            var testInput = document.createElement('input');
-            testInput.setAttribute('type', 'date');
-            if (testInput.type !== 'date') {
-
-                /* add placeholder & pattern to all date fields */
-                var dateFields = document.querySelectorAll('.mc4wp-form input[type="date"]');
-                for (var i = 0; i < dateFields.length; i++) {
-                    if (!dateFields[i].placeholder) {
-                        dateFields[i].placeholder = 'YYYY-MM-DD';
-                    }
-                    if (!dateFields[i].pattern) {
-                        dateFields[i].pattern = '[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])';
-                    }
-                }
-            }
-
-        })();
-    </script>
+    
     <script type='text/javascript' src='js/plugins/ui/core.min.js'></script>
     <script type='text/javascript' src='js/plugins/ui/datepicker.min.js'></script>
     <script type='text/javascript'>
         jQuery(document).ready(function(jQuery) {
-            jQuery.datepicker.setDefaults({
-                "closeText": "Close",
-                "currentText": "Today",
-                "monthNames": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-                "monthNamesShort": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-                "nextText": "Next",
-                "prevText": "Previous",
-                "dayNames": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-                "dayNamesShort": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
-                "dayNamesMin": ["S", "M", "T", "W", "T", "F", "S"],
-                "dateFormat": "MM d, yy",
-                "firstDay": 1,
-                "isRTL": false
+           //
+
+            let mercedes_store = [
+                {name: "C 180 AMG" , price : '1 tỷ 499', image : 'images/c180amg_do.png'},
+                {name: "C 300 AMG" , price : '1 tỷ 969', image : 'images/c300amg_xanh.png'},
+                {name: "C 200 Exclusive" , price : '1 tỷ 699', image : 'images/c200ex_trang.webp'},
+                {name: "E 200 Exclusive" , price : '2 tỷ 310', image : 'images/e200ex_den.webp'},
+                {name: "E 300 AMG" , price : '2 tỷ 950', image : 'images/e300amg_trang.webp'},
+                {name: "S 450 L luxury" , price : '4 tỷ 969', image : 'images/s450lluxury_nau.jpg'},
+                {name: "S 450 Limited Edition" , price : '4 tỷ 299', image : 'images/s450limited_den.jpg'},
+                {name: "GLC 200" , price : '1 tỷ 799', image : 'images/glc200_trang.webp'},
+                {name: "GLC 200 4matic" , price : '2 tỷ 099', image : 'images/glc2004matic_trang.webp'},
+                {name: "GLB 200 AMG" , price : '2 tỷ 999', image : 'images/glb200amg_trang.webp'},
+                {name: "GLS 450 4matic" , price : '4 tỷ 999', image : 'images/gls4504matic_trang.webp'},
+                {name: "GLE 450 4matic" , price : '4 tỷ 409', image : 'images/gle4504matic_trang.webp'},
+                {name: "Mercedes-AMG G63" , price : '10 tỷ 950', image : 'images/g63amg_den.webp'}
+            ];
+            
+            let store_html = ``;
+            jQuery.each(mercedes_store, function( index, value ) {
+                const html_car = `<div class="element grid classic2_cols animated2">
+                                    <div class="one_half gallery2 grid static filterable portfolio_type themeborder" data-id="post-2" style="background-image:url(${value.image});">
+                                        <a class="car_image" href="#"></a>
+                                        <div class="portfolio_info_wrapper">
+                                            <div class="car_attribute_wrapper">
+                                                <h4>${value.name}</h4>
+                                            </div>
+                                            <div class="car_attribute_price">
+                                                <div class="car_attribute_price_day two_cols">
+                                                    <span class="single_car_currency">đ</span><span class="single_car_price">${value.price}</span>
+                                                </div>
+                                            </div>
+                                            <br class="clear" />
+                                        </div>
+                                    </div>
+                                </div>`;
+
+                store_html += html_car;
             });
+
+            jQuery('#portfolio_filter_wrapper').html(store_html);
+
+
+
+
         });
     </script>
     <script type='text/javascript' src='js/plugins/jquery.requestAnimationFrame.js'></script>

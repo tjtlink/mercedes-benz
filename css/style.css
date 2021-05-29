@@ -10233,15 +10233,15 @@ body.tg_boxed
 }
 
 #messenger-button {
-	bottom: 111px; /* Place the button at the bottom of the page */
+	bottom: 60px; /* Place the button at the bottom of the page */
 }
 
 #phone-button {
-	bottom: 181px; /* Place the button at the bottom of the page */
+	bottom: 130px; /* Place the button at the bottom of the page */
 }
 
 #zalo-button {
-	bottom: 251px;
+	bottom: 200px;
 }
 
 .action-button i {
